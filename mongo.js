@@ -8,6 +8,7 @@ const mongoose = require('mongoose')
 // const password = process.argv[2]
 
 const url = `mongodb+srv://Vitalii113377:${password}@cluster0.p7albi1.mongodb.net/full-stack-db?retryWrites=true&w=majority`
+
 mongoose.set('strictQuery', false)
 mongoose.connect(url)
 
@@ -29,7 +30,7 @@ const Note = mongoose.model('Note', noteSchema)
 // })
 
 
-Note.find({ _id: "648981637882b05efb76fe7e" }).then(result => {
+Note.find({}).then(result => {
   result.forEach(note => {
     console.log(note)
   })
