@@ -1,0 +1,8 @@
+post http://localhost:3001/api/notes/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvdCIsImlkIjoiNjRiNzhmOGJiOGM4N2ZjZGI5NGUzYzAwIiwiaWF0IjoxNjg5NzU5NzY3fQ.Pia_lbQsmjLSQ7j4fm9d0QI8Rc2ayZQ4A8uBH7-t-HQ
+
+{
+    "content": "HEY HEY",
+    "important": false
+}
